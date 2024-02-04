@@ -2,6 +2,95 @@
   text-align: center;
 }
 
+.distanceInputContainer {
+  display: flex;
+  align-items: center;
+}
+
+.distanceUnit {
+  margin-left: 40px; 
+  margin-top: 25px;
+  font-family: Phantomsans, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header{
+  margin-left: 20px;
+  font-family: Impact;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.date{
+  align-items: center;
+  width: 250px; 
+  margin-top: 20px;
+  padding: 20px; 
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  font-family: Phantomsans, sans-serif;
+  font-size: 15px;
+  
+  
+}
+
+.time{
+  align-items: center;
+  width: 250px; 
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  padding: 20px; 
+  margin-top:5px;
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  font-family: Phantomsans, sans-serif;
+  font-size: 15px;
+  
+}
+
+
+
+.divStyle {
+  margin-left: 20px;
+  background-color:#00DDEB;
+    width: 300px; 
+    height: 525px;
+    padding: 20px; 
+   
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    
+}
+
+.fee{
+  
+  background-color: #041E42;
+     
+    font-family: Impact;
+    color: white;
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +125,129 @@
     transform: rotate(360deg);
   }
 }
+.buttonContainer {
+  text-align: center; 
+}
+
+.buttonStyle  {
+  display: inline-block;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  margin-right: 10px;
+  font-family: Phantomsans, sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 10px 15px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.dateLabel{
+  color: #ccc;
+  font-weight: bold;
+  
+}
+
+@media (min-width: 768px) {
+  .buttonStyle  {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.timePickerContainer {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+}
+
+.buttonStyle:active,
+.buttonStyle:hover {
+  outline: 0;
+}
+
+.buttonStyle  span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.buttonStyle:hover span {
+  background: none;
+}
+
+
+
+
+
+.input-group {
+  width: 50%;
+  max-width: 15em; 
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  
+ 
+}
+
+.input-group__label {
+  padding: 0 0.5em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.90em; 
+  letter-spacing: 0.1em;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+}
+
+.input-group__input {
+  color: #fff;
+  align-items: center;
+  font-size: 1rem; 
+  line-height: 1;
+  border: none;
+  outline: none;
+  height: calc(0.3em + 0.3em + 0.3em);
+  width: 100%;
+  padding: 0.5em 1em; 
+  border-radius: 1em; 
+  background-image: linear-gradient(#000, #000),
+    linear-gradient(120deg, #f09 0%, #0ff 50%, #9f0 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  border-radius: 1em;
+  background-size: 200% 100%;
+  transition: background-position 0.8s ease-out;
+
+  &:hover {
+    background-position: 100% 0;
+  }
+
+  &:focus {
+    outline: 2px dashed #ad2b89;
+    outline-offset: 0.5em;
+  }
+}
+
+
+
+
